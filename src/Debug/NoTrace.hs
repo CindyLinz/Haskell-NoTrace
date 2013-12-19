@@ -38,3 +38,15 @@ trace _ = id
 
 traceShow :: Show a => a -> b -> b
 traceShow _ = id
+
+traceStack :: String -> a -> a
+traceStack _ = id
+
+traceIO :: String -> IO ()
+traceIO _ = return ()
+
+traceEvent :: String -> a -> a
+traceEvent _ = id
+
+traceEventIO :: String -> IO ()
+traceEventIO _ = return ()
