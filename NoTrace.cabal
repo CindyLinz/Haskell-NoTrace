@@ -25,11 +25,11 @@ library
   exposed-modules:     Debug.NoTrace
   -- other-modules:       
   hs-source-dirs:      src
-  build-depends:       base >=4.3 && <4.5
+  build-depends:       base >=4.3 && <4.7
 
 Test-Suite main
   type:                exitcode-stdio-1.0
   main-is:             Main.hs
   hs-source-dirs:      test
                      , src
-  build-depends:       base >=4.3 && <4.5
+  build-depends:       base >=4.3 && <4.7
