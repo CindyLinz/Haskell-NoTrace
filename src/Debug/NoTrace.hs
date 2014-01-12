@@ -8,7 +8,7 @@
 -- Stability   :  provisional
 -- Portability :  portable
 --
--- This module introduce functions that have identical types with functions in the 'Debug.Trace' module.
+-- This module introduce functions that have identical types with functions in the "Debug.Trace" module.
 --
 -- You might write some programs like this:
 --
