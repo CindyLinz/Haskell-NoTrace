@@ -33,4 +33,4 @@ Test-Suite main
   hs-source-dirs:      test
                      , src
   build-depends:       base >=4.5 && <4.7
-  ghc-options:         -O2 -prof
+  ghc-options:         -O2
