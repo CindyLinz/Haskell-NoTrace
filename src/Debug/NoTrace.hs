@@ -30,14 +30,17 @@
 -------------------------------------------------------------------------------
 module Debug.NoTrace where
 
-putTraceMsg :: String -> IO ()
-putTraceMsg _ = return ()
-
 trace :: String -> a -> a
 trace _ = id
 
+traceId :: String -> String
+traceId = id
+
 traceShow :: Show a => a -> b -> b
 traceShow _ = id
+
+traceShowId :: Show a => a -> a
+traceShowId = id
 
 traceStack :: String -> a -> a
 traceStack _ = id
@@ -45,8 +48,23 @@ traceStack _ = id
 traceIO :: String -> IO ()
 traceIO _ = return ()
 
+traceM :: Monad m => String -> m ()
+traceM _ = return ()
+
+traceShowM :: (Show a, Monad m) => a -> m ()
+traceShowM _ = return ()
+
+putTraceMsg :: String -> IO ()
+putTraceMsg _ = return ()
+
 traceEvent :: String -> a -> a
 traceEvent _ = id
 
 traceEventIO :: String -> IO ()
 traceEventIO _ = return ()
+
+traceMarker :: String -> a -> a
+traceMarker _ = id
+
+traceMarkerIO :: String -> IO ()
+traceMarkerIO _ = return ()
