@@ -2,7 +2,7 @@
 -- documentation, see http://haskell.org/cabal/users-guide/
 
 name:                NoTrace
-version:             0.3.0.2
+version:             0.3.0.3
 synopsis:            Remove all the functions come from Debug.Trace after debugging
 description:         This module introduce functions with identical types with functions in the Debug.Trace.
                      When completing the debug process,
